@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Card</title>
+</head>
+<body>
+    <main id="main-content">
+        <article data-testid="test-profile-card" aria-labelledby="profile-heading">
+        <figure>
+            <img src="profile.jpg" alt="Photo of Rafiu Ayomide" data-testid="test-user-avatar">
+            <figcaption class="visually-hidden">User avatar</figcaption>
+        </figure>
+
+        <div class="card-content">
+            <header>
+                <h2 id="profile-heading" data-testid="test-user-name">Rafiu Ayomide</h2>
+            </header>
+
+            <p data-testid="test-user-bio">I build things on the web and enjoy learning new technologies.</p>
+
+            <p data-testid="test-user-time"></p>
+
+            <nav aria-label="Social links" data-testid="test-user-social-links">
+                <ul class="social-list">
+                    <li><a href="https://twitter.com/baby_programer" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+                    <li><a href="https://linkedin.com/in/rafiuayomide" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+                    <li><a href="https://github.com/babyprogrammer1" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h3 id="hobbies-heading">Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Coding</li>
+                    <li>Reading</li>
+                    <li>Sleeping</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3 id="dislikes-heading">Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>Spicy food</li>
+                    <li>Long meetings</li>
+                    <li>Traffic jams</li>
+                </ul>
+            </section>
+        </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
