@@ -36,7 +36,7 @@ Notes
 - If you'd like an automated test harness (Jest + jsdom or Playwright), tell me and I can add a minimal setup.
 
 ---
-Generated: Oct 16, 2025
+Oct 16, 2025
 
 ---
 Stage 1 Addendum (Oct 20, 2025)
