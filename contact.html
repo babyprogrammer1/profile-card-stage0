@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav data-testid="test-site-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" data-testid="test-nav-home">Home</a></li>
+                <li><a href="contact.html" data-testid="test-nav-contact">Contact</a></li>
+                <li><a href="about.html" data-testid="test-nav-about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="" id="contact-form" novalidate>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Full Name" data-testid="test-contact-name" aria-describedby="test-contact-error-name" required>
+            <span id="test-contact-error-name" data-testid="test-contact-error-name" class="error" aria-live="polite"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="name@example.com" data-testid="test-contact-email" aria-describedby="test-contact-error-email" required>
+            <span id="test-contact-error-email" data-testid="test-contact-error-email" class="error" aria-live="polite"></span>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" data-testid="test-contact-subject" aria-describedby="test-contact-error-subject" required>
+            <span id="test-contact-error-subject" data-testid="test-contact-error-subject" class="error" aria-live="polite"></span>
+
+            <label for="message">Message</label>
+            <textarea id="message" data-testid="test-contact-message" aria-describedby="test-contact-error-message" required></textarea>
+            <span id="test-contact-error-message" data-testid="test-contact-error-message" class="error" aria-live="polite"></span>
+
+            <button type="submit" data-testid="test-contact-submit">Submit</button>
+            <p id="test-contact-success" data-testid="test-contact-success" role="status" aria-live="polite" hidden></p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
