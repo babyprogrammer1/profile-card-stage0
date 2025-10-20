@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>About — Profile</title>
+</head>
+<body>
+  <header>
+    <nav data-testid="test-site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-testid="test-nav-home">Home</a></li>
+        <li><a href="contact.html" data-testid="test-nav-contact">Contact</a></li>
+        <li><a href="about.html" data-testid="test-nav-about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main data-testid="test-about-page">
+    <section>
+      <h2>Bio</h2>
+        <p data-testid="test-about-bio">I'm Ayomide Rafiu, a passionate developer focused on building accessible, responsive web applications. I enjoy turning design problems into user-friendly interfaces and writing maintainable code.</p>
+        <ul aria-label="Key skills">
+            <li>Frontend: HTML, CSS, JavaScript</li>
+            <li>Tools: Git, npm, build tools</li>
+        </ul>
+    </section>
+
+    <section>
+      <h2>Goals in this program</h2>
+      <ul data-testid="test-about-goals">
+        <li>Improve frontend architecture skills</li>
+        <li>Master accessibility and testing</li>
+        <li>Build a strong developer portfolio</li>
+        <li>Learn to collaborate effectively</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Areas of low confidence</h2>
+      <ul data-testid="test-about-confidence">
+        <li>Advanced CSS animations</li>
+        <li>Accessibility nuances</li>
+        <li>Testing best practices</li>
+        <li>Version control systems</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Note to future self</h2>
+      <p data-testid="test-about-future-note">Keep learning, stay humble, it's best to ask for help when needed and it's better to try and fail than to never try at all.</p>
+    </section>
+
+    <section>
+      <h2>Extra thoughts</h2>
+      <p data-testid="test-about-extra">This program is pushing me to think deeply about frontend craftsmanship.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
