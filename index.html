@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Profile Card</title>
 </head>
 <body>
+    <header>
+        <nav data-testid="test-site-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" data-testid="test-nav-home">Home</a></li>
+                <li><a href="contact.html" data-testid="test-nav-contact">Contact</a></li>
+                <li><a href="about.html" data-testid="test-nav-about">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <main id="main-content">
         <article data-testid="test-profile-card" aria-labelledby="profile-heading">
         <figure>
@@ -25,9 +35,24 @@
 
             <nav aria-label="Social links" data-testid="test-user-social-links">
                 <ul class="social-list">
-                    <li><a href="https://twitter.com/baby_programer" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
-                    <li><a href="https://linkedin.com/in/rafiuayomide" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
-                    <li><a href="https://github.com/babyprogrammer1" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+                        <li>
+                            <a href="https://twitter.com/baby_programer" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="visually-hidden">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/rafiuayomide" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                <span class="visually-hidden">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/babyprogrammer1" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span class="visually-hidden">GitHub</span>
+                            </a>
+                        </li>
                 </ul>
             </nav>
 
